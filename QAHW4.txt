@@ -1,0 +1,303 @@
+TC1-TP1: Accessing the website
+
+1. Go to http://uk.qateam.eu/PhotoAlbum/home/index
+
+Expected result:
+Succesful load of home page, navigation bar, header
+
+Actual result:
+As Expected.
+-------------------------
+
+TC2-TP2: Navigation bar - unregistered user
+
+1. Open Project home page 
+
+Expected result:
+Login and Registration hyperlinks should be present in navigation bar.
+
+Actual result:
+As Expected.
+-------------------------
+
+
+TC3-TP2: Navigation bar - registered user/admin
+
+1. Open Project home page 
+
+Expected result:
+Logout hyperlinks should be present in navigation bar.
+
+Actual result:
+As Expected.
+-------------------------
+
+
+TC4-TP2: Home page album block - vote button
+
+1. Open Project home page - album blocks with "highest rankes albums" header should be present. 
+2. Click "Vote" button on an album block
+
+Expected result:
+Navigate to Album voting page.
+
+Actual result:
+As Expected.
+-------------------------
+
+TC5-TP2: Home page album block - comment button
+
+1. Open Project home page - album blocks with "highest rankes albums" header should be present. 
+2. Click "Comment" button on an album block
+
+Expected result:
+Navigate to Album commenting page.
+
+Actual result:
+As Expected.
+-------------------------
+
+TC6-TP2: Voting - unregistered user
+
+1. Follow steps in TC4
+2. Type in number in field
+3. Click "Vote"
+
+Expected result:
+Error message occurs, cannot vote when not logged in
+
+Actual result:
+As Expected.
+-------------------------
+
+TC7-TP2: Voting - registered user
+
+1. Open Project home page
+2. Click Login button
+3. Input valid credentials
+4. Click "Vote" button on an album block on home page
+5. Type in number in field
+6. Click "Vote" on voting page
+
+Expected result:
+Successfully voted.
+
+Actual result:
+As Expected.
+-------------------------
+
+TC8-TP1: Commenting - unregistered user
+
+1. Follow steps TC5
+2. Click "Create Comment"
+
+Expected result:
+Error messagge - no text in "comment text" field
+
+Actual result:
+As Expected.
+-------------------------
+
+TC9-TP2: Commenting - unregistered user
+
+1. Follow steps TC5
+2. Type text in "Comment text" field
+3. Click "Create Comment"
+
+Expected results:
+Error message occurs - unable to make comments when not logged in
+
+Actual result:
+As Expected.
+-------------------------
+
+TC10-TP3: Commenting - registered user
+
+1. Open Project home page
+2. Click Login button
+3. Input valid credentials
+4. Click "Comment" button on an album block
+5. Click "Create Comment"
+
+Expected results:
+Error messagge - no text in "comment text" field
+
+Actual result:
+As Expected.
+-------------------------
+
+TC11-TP3: TC10-TP3: Commenting - registered user
+
+1. Open Project home page
+2. Click Login button
+3. Input valid credentials
+4. Click "Comment" button on an album block
+5. Type text in "Comment text" field
+6. Click "Create Comment"
+
+Expected results:
+Successfully post comment
+
+Actual result:
+As Expected.
+-------------------------
+
+TC12-TP3: Add album - unregistered user. 
+
+1. Go to project home page
+
+Expected result:
+No visible tab to create album when not logged in
+
+Actual result:
+As Expected.
+-------------------------
+
+TC13-TP3: Add album - registered user/admin
+
+1. Go to project home page 
+2. Login with valid credentials
+3. Click "Add album" tab
+4. Fill in all required fields with valid entries
+5. Click "Create album"
+
+Expected reuslts:
+New album successfully created.
+
+-------------------------
+
+TC14-TP3: Add album - registered user/admin - invalid fields
+
+1. Go to project home page 
+2. Login with valid credentials
+3. Click "Add album" tab
+4. Fill in all but one category (repeat for each one)
+5. Click "Create album"
+
+Expected Results:
+Error message - empty data field
+
+-------------------------
+
+TC15-TP3: Add album - registered user/admin - empty categories
+
+1. Go to project home page 
+2. Login with valid credentials
+3. Click "Add album" tab
+4. Leave text fields empty
+5. Click "Create album"
+
+Expected Results:
+Error message - empty data field
+
+-------------------------
+
+TC16-TP3: Add picture - registered user/admin
+
+1. Go to project home page 
+2. Login with valid credentials
+3. After following steps in TC15 navigate to Album view (click on album block)
+4. Click "Add picture"
+5. Fill in all the fields with valid entries
+6. Click "Create picture"
+
+Expected results:
+Picture added to album
+
+-------------------------
+
+TC17-TP3: Add picture - registered user/admin - invalid fields
+
+1. Follow TC16 1-4
+2. Fill in all fields except one
+3. Click "Create picture"
+
+Expected results:
+Error message  - empty field
+
+-------------------------
+
+TC18-TP3: Add picture - registered user/admin - empty fields
+
+1. Follow TC16 1-4
+2. Leave fields empty
+3. Click "Create picture"
+
+Expected results:
+Error message  - empty field
+
+-------------------------
+
+TC19-TP2: Category list
+
+1. Open project home page 
+2. Click "Categories" link in header
+
+Expected result:
+Navigate to categories list, each category link has name and number of albums present. 
+
+-------------------------
+
+TC20-TP2: Category list - admin
+
+1. Open project home page 
+2. Login as admin with valid credentials
+3. Click "Categories" link in header
+
+Expected results:
+Navigate to categories list, each category link has name and number of albums present. 
+Buttons for adding, editting or deleting categories also present
+
+-------------------------
+
+TC21-TP1: Category view
+
+1. Follow steps from TC19 or TC20
+2. Click any category huperlink
+
+Expected result:
+Navigate to category view page - album blocks in category appear in descending order by creation.
+
+-------------------------
+
+TC22-TP2: Album list
+
+1. Open project home page
+2. Click "Albums" hyperlink 
+
+Expected results:
+Navigate to albums list page, all album block present in descending order by creation. 
+
+-------------------------
+
+TC23-TP1: Search 
+
+1. Open project home page
+2. Click "Search" hyperlink 
+
+Expected result:
+Navigate to page with search bar
+
+-------------------------
+
+TC24-TP2: Search bar
+
+1. Follow steps TC23
+2. Type in search field (try with both valid and invalid keywords)
+3. Click "Search"
+
+Expected result:
+If keyword in album, picture or category name - show results are shown under search bar.
+Else "No results found" message appears
+
+-------------------------
+
+TC25-TP1: Search bar - empty
+
+1. Follow steps TC23
+2. Leave bar empty
+3. Click "Search"
+
+Expected results:
+Error message - search field empty
+
